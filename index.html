@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algo de calcul d'un Revenu Reel</title>
+</head>
+<body>
+    <h1>Calculateur de Revenu Reel !</h1>
+    <div>
+        <label for="">Revenu Nets après impôts</label>
+        <input type="text" id="revenuNet">
+        <label for="">Prestations Sociales</label>
+        <input type="text" id="prestationSociale">
+        <label for="">Taxes d'habitation</label>
+        <input type="text" id="taxeHabitation">
+        <button>Calculer</button>
+        <div id="resultat">Resultat: </div>
+    </div>
+
+    <script>
+        const revenuNominal = document.getElementById('revenuNet');
+        const prestationSociale = document.getElementById('prestationSociale');
+        const resultat = document.getElementById('resultat');
+        const button = document.querySelector('button');
+
+        button.addEventListener('click', () => {
+            const revenuNetValue = revenuNet.value;
+            const prestationSocialeValue = prestationSociale.value;
+            const resultatValue = revenuNetValue / prestationSocialeValue;
+            resultat.innerHTML = `Resultat: ${resultatValue}`;
+        });
+    </script>
+</body>
+</html>
+
+
