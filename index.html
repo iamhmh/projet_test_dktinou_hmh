@@ -7,17 +7,23 @@
     <title>Algo de calcul d'un Revenu Reel</title>
 </head>
 <body>
-    <h1>Calculateur de Revenu Reel !</h1>
-    <div>
-        <label for="">Revenu Nets après impôts</label>
-        <input type="text" id="revenuNet">
-        <label for="">Prestations Sociales</label>
-        <input type="text" id="prestationSociale">
-        <label for="">Taxes d'habitation</label>
-        <input type="text" id="taxeHabitation">
-        <button>Calculer</button>
-        <div id="resultat">Resultat: </div>
-    </div>
+    <form action="">
+        <h1>Revenu Disponible par an</h1>
+        <div>
+            <label for="">Revenu Nets après impôts</label>
+                <input type="text" id="revenuNet">
+            <label for="">Prestations Sociales</label>
+                <input type="text" id="prestationSociale">
+            <label for="">Taxes d'habitation</label>
+                <input type="text" id="taxeHabitation">
+            <label for="">Taxes foncières</label>
+                <input type="text" id="taxeHabitation">
+            <label for="">Crédit et autres</label>
+                <input type="text" id="taxeHabitation">
+            <button>Calculer</button>
+            <div id="resultat">Resultat: </div>
+        </div>
+    </form>
 
     <script>
         const revenuNominal = document.getElementById('revenuNet');
@@ -34,5 +40,3 @@
     </script>
 </body>
 </html>
-
-
